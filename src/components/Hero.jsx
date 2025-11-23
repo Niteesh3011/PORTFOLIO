@@ -28,14 +28,14 @@ const Hero = () => {
             </p>
             <p className="text-[#915eff] font-semibold lg:text-[24px] sm:text-[22px] text-[18px] mt-4 sm:mt-6 tracking-wide px-2 sm:px-0">
               Please feel free to connect!
-            </p>
+          </p>
           </motion.div>
         </div>
       </div>
       
       {/* 3D Computer Section */}
       <div className="w-full max-w-7xl mx-auto h-[350px] sm:h-[400px] md:h-[450px] lg:h-[500px] mt-6 sm:mt-8 md:mt-10 relative px-4 sm:px-6 md:px-8 lg:px-16">
-        <ComputersCanvas />
+      <ComputersCanvas />
       </div>
 
       <div className="absolute bottom-8 sm:bottom-12 md:bottom-16 w-full flex justify-center items-center z-10">

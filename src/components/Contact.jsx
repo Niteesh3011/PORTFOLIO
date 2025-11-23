@@ -232,7 +232,7 @@ const Contact = () => {
   });
   const [loading, setLoading] = useState(false);
   const [status, setStatus] = useState({ type: "", message: "" });
-
+  
   const handleChange = (e) => {
     const { name, value } = e.target;
     setForm({ ...form, [name]: value });
@@ -300,12 +300,12 @@ const Contact = () => {
             Send me a message and I'll respond as soon as possible.
           </motion.p>
 
-          {/* Formspree Form */}
-          <form
-            ref={formRef}
+        {/* Formspree Form */}
+        <form
+          ref={formRef}
             onSubmit={handleSubmit}
             className="flex flex-col gap-4 sm:gap-5 md:gap-6"
-          >
+        >
             <motion.div
               variants={slideIn("", "", 0.4, 1)}
               className="flex flex-col"
@@ -313,16 +313,16 @@ const Contact = () => {
               <label htmlFor="name" className="text-white font-medium mb-2 text-sm">
                 Your Name <span className="text-[#915eff]">*</span>
               </label>
-              <input
+            <input
                 id="name"
-                type="text"
-                name="name"
-                value={form.name}
-                onChange={handleChange}
+              type="text"
+              name="name"
+              value={form.name}
+              onChange={handleChange}
                 placeholder="Enter your full name"
                 className="bg-tertiary py-2.5 sm:py-3 px-4 placeholder:text-secondary/60 text-white rounded-lg outline-none border-2 border-transparent focus:border-[#915eff] transition-all duration-300 font-medium text-sm"
-                required
-              />
+              required
+            />
             </motion.div>
 
             <motion.div
@@ -331,17 +331,17 @@ const Contact = () => {
             >
               <label htmlFor="email" className="text-white font-medium mb-2 text-sm">
                 Your Email <span className="text-[#915eff]">*</span>
-              </label>
-              <input
+          </label>
+            <input
                 id="email"
-                type="email"
-                name="email"
-                value={form.email}
-                onChange={handleChange}
+              type="email"
+              name="email"
+              value={form.email}
+              onChange={handleChange}
                 placeholder="your.email@example.com"
                 className="bg-tertiary py-2.5 sm:py-3 px-4 placeholder:text-secondary/60 text-white rounded-lg outline-none border-2 border-transparent focus:border-[#915eff] transition-all duration-300 font-medium text-sm"
-                required
-              />
+              required
+            />
             </motion.div>
 
             <motion.div
@@ -350,17 +350,17 @@ const Contact = () => {
             >
               <label htmlFor="message" className="text-white font-medium mb-2 text-sm">
                 Your Message <span className="text-[#915eff]">*</span>
-              </label>
-              <textarea
+          </label>
+            <textarea
                 id="message"
                 rows={4}
-                name="message"
-                value={form.message}
-                onChange={handleChange}
+              name="message"
+              value={form.message}
+              onChange={handleChange}
                 placeholder="Tell me about your project or just say hello..."
                 className="bg-tertiary py-2.5 sm:py-3 px-4 placeholder:text-secondary/60 text-white rounded-lg outline-none border-2 border-transparent focus:border-[#915eff] transition-all duration-300 font-medium text-sm resize-none"
-                required
-              ></textarea>
+              required
+            ></textarea>
             </motion.div>
 
             {/* Status Message */}
@@ -380,7 +380,7 @@ const Contact = () => {
 
             <motion.button
               variants={slideIn("", "", 0.7, 1)}
-              type="submit"
+            type="submit"
               disabled={loading}
               className="group relative bg-gradient-to-r from-[#915eff] to-[#bf61ff] py-2.5 sm:py-3 px-6 sm:px-8 outline-none w-full sm:w-fit text-white font-bold shadow-lg shadow-[#915eff]/50 rounded-xl text-sm hover:shadow-[#915eff]/70 transition-all duration-300 hover:scale-105 active:scale-95 disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:scale-100"
             >
@@ -401,18 +401,18 @@ const Contact = () => {
                 </span>
               )}
             </motion.button>
-          </form>
-        </motion.div>
+        </form>
+      </motion.div>
 
-        <motion.div
-          variants={slideIn("right", "tween", 0.2, 1)}
+      <motion.div
+        variants={slideIn("right", "tween", 0.2, 1)}
           className="flex-1 w-full lg:w-auto lg:flex-1 h-[300px] sm:h-[350px] md:h-[400px] lg:h-[450px] xl:h-[500px] flex items-center justify-center"
-        >
+      >
           <div className="w-full h-full relative">
-            <EarthCanvas />
+        <EarthCanvas />
           </div>
-        </motion.div>
-      </div>
+      </motion.div>
+    </div>
     </>
   );
 };

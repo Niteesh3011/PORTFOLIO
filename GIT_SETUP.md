@@ -24,8 +24,8 @@ If you see a version number, Git is installed correctly!
 ## Step 2: Configure Git (First Time Only)
 
 ```powershell
-git config --global user.name "Niteesh Pandit"
-git config --global user.email "your-email@example.com"
+git config --global user.name "Niteesh3011"
+git config --global user.email "prajaptiniteesh7@gmail.com"
 ```
 
 Replace with your actual email address.
