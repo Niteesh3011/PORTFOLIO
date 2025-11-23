@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "start": "vite preview --port $PORT",
+    "start": "serve -s dist -l $PORT",
     "lint": "eslint .",
     "preview": "vite preview"
   },
@@ -24,6 +24,8 @@
     "react-router-dom": "^7.6.0",
     "react-vertical-timeline-component": "^3.5.3",
     "three": "^0.176.0"
+  ,
+    "serve": "^14.1.2"
   },
   "devDependencies": {
     "@eslint/js": "^9.25.0",
